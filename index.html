@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style_encriptador.css"/>
+    <link rel="shortcut icon" href="./img/detectiveEncontro.png" type="image/x-icon"/>
+    <title>ENCRIPTADOR</title>
+</head>
+ 
+
+
+<body>
+    
+<div class = "container-fluid col-12 text-center titulo-pagina">
+    <h1 class = "tituloPagina">ENCRIPTADOR Y DESENCRIPTADOR DE TEXTO</h1>
+
+</div>
+
+
+<div class = "row col-12  contenido" id ="contenido">
+    <div class ="col-sm-1"></div>
+    
+    <div class ="col-sm-4 detectiveyDialogo" id="imagenDectyA">
+        <div class =" imagenes" id="imagenDecty">
+            <img
+            alt="Detectives"             
+            class= "detectiveBuscando"
+            id="imagenDetective" 
+            src="./img/dectectiveBuscando.png">
+        </div>
+
+        <div class="conversacion" id="dialogoDecty">
+            <textarea
+            disabled
+            
+            id="dialogo"
+            class="dialogo"
+            placeholder="hola"
+            ></textarea>
+        </div>
+
+        <div class = "row col-sm-12 areaBtnIniciar" id="areaBotonIniciar">
+            <div class = " col-sm-12 bt-Iniciar" id="areabtIniciar">
+                <button type="button" class="btn btn-primary btn-md" id="bt-Iniciar" onclick="iniciar()">Re-Iniciar</button>
+            </div>  
+        </div>  
+            
+    </div>
+    
+    <div class =" col-sm-3 areaTexto" id="areaTexto">
+    
+        <div class = "col-sm-12 areaAEncriptar" id = "areaAEncriptar">
+            <textarea 
+            onkeypress="return ' abcdefghijklmnñopqrstuvwxyz'.includes(event.key)"
+            
+            id="textoAEncriptar" 
+            class="textoAEncriptar" 
+            placeholder= "Escribe aquí tu mensaje..."
+            ></textarea>
+        </div>
+
+        <div class="validacionDelTexto" id="valdacionTexto">
+            <p>🚩Solo se haceptan letras minúsculas y sin tílde.</p>
+        </div>
+
+        <div class = "col-sm-12  botones" id="areaBtnEncriptar">
+            <div class = "col-sm-12 bt-copiar" id="botones">
+                <button type="button" class="btn btn-primary btn-md" id="bt-encriptar" onclick="encriptar()">Encriptar</button>
+             
+            
+                <button type="button" class="btn btn-primary btn-md" id="bt-desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <div class ="col-sm-3  divEncriptado" id="areaResultado">
+        <div class = "col-sm-12 areaEncriptada" id="areaEncriptada">
+            <textarea
+            id="textoEncriptado" 
+            class="textoEncriptado" 
+            placeholder= "Aquí aparecerá el texto encriptado/desencriptado..."
+            ></textarea>
+        </div>
+        
+        <div class = "col-sm-12 areaBtnCopiar" id="areaBotonCopiar">
+            <div class = "col-sm-12 bt-copiar" id="areaBtCopiar">
+                <button type="button" class="btn btn-primary btn-md" id="bt-Copiar" onclick="copiar()">Copiar</button>
+            </div>  
+        </div>
+    </div>
+
+</div>
+
+<div class = "container-fluid col-12 rodapie" id="rodapie">
+    <h5>Pagina desarrollada por Samuel Osorio.</h5>
+    
+
+</div>
+
+</body>
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="index.js"></script>
+</html>

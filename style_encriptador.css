@@ -1,0 +1,131 @@
+
+body{
+    background-color:  #84e4d4;
+}
+
+
+.tituloPagina{
+    padding: 1%;
+    font-family: fantasy;
+    
+}
+
+
+.textoAEncriptar,
+.textoEncriptado{
+    font-size: 18px;
+    background: white;
+    opacity: 0.5;
+
+    border: 1px;
+    border-color: transparent;
+    border-radius: 5%;
+    width: 100%;
+    text-align: justify;
+    height: 100%;
+
+}
+
+
+#imagenDectyA{
+    height: 400px;
+}
+#imagenDecty{
+    height: 60%;
+}
+#dialogoDecty{
+    height: 25%;
+}
+#areaBotonIniciar{
+    height: 10%;
+    padding: 2px;
+}
+
+#areaTexto{
+    height: 400px;
+}
+#areaAEncriptar{
+    height: 75%
+}
+#valdacionTexto{
+    height: 10%;
+}
+#areaBtnEncriptar{
+    height: 10%;
+}
+
+#areaResultado{
+    height: 400px;
+}
+#areaEncriptada{
+    height: 85%;
+}
+#areaBotonCopiar{
+    height: 10%;
+  
+}
+
+.textoAEncriptar:before,
+.textoAEncriptar:focus {
+    border: 1px;
+    border-color: transparent;
+}
+
+
+
+
+.textoAEncriptar::placeholder{
+    color: gray;
+}
+
+
+.validacionDelTexto{
+    opacity: 0.6;
+}
+
+button{
+    font-size:0.8rem;
+    margin: 10px;
+    
+}
+
+#areabtIniciar,
+#areaBtCopiar,
+#imagenDecty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.textoEncriptado::placeholder{
+    color: gray;
+}
+
+.detectiveBuscando{
+    height: 100%;
+}
+
+#dialogo{
+    background: transparent;
+    width: 100%;
+    font-size: 16px;
+    border-color: transparent;
+    font-style: italic;
+    font-weight: 500;
+    font-stretch: expanded;
+    text-align: center;
+    height: 100%;
+}
+
+#rodapie{
+    text-align: center;       
+}
